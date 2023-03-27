@@ -496,3 +496,41 @@ span {
     margin-bottom: 3rem;
   }
 }
+
+/* Thank You page */
+
+.thank-you, .thankyou-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.thank-you h1 {
+  font-size: 5rem;
+  color: var(--main-color);
+  padding: 1rem;
+}
+
+.thank-you h3 {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  padding: 1rem;
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size:  1.6rem;
+  color: var(--bg-color);
+  letter-spacing: .1rem;
+  font-weight: 600;
+  margin-top: 2%;
+  transition: .5s ease;
+}
+
+.back-btn:hover {
+  box-shadow: none;
+}

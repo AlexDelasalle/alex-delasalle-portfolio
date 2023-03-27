@@ -63,7 +63,7 @@
           <i class="devicon-heroku-original-wordmark"></i>
           <i class="devicon-postgresql-plain-wordmark"></i>
         </div> -->
-        <a href="" class="btn">Download CV</a>
+        <a href="https://www.linkedin.com/in/alex-delasalle-811568150/" target="_blank" class="btn">LinkedIn</a>
       </div>
       <div class="home-image">
         <img src="images/Subject.jpg" alt="">
@@ -80,8 +80,9 @@
       <div class="about-content">
         <h2 class="heading">About <span>Me</span></h2>
         <h3>Full-Stack Web Developer</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum alias officia facilis ex voluptatem ipsa quasi, nesciunt animi enim maiores mollitia, quas eius aspernatur a culpa est minima laboriosam consectetur?</p>
-        <a href="" class="btn">Read More</a>
+        <p>Having previously spent time studying to become a Sports Physiotherapist and a brief stint in Broadcast production, I made the decision to make a career switch in search of a role that better suited my lifestyle ambitions and logical way of thinking.</p>
+        <p>When I am away from the computer screen I'll often be found at Vicarage Road supporting my childhood football club Watford FC or in the theatre indulging in whatever musical spectacular has taken my fancy that weekend.</p>
+        <a href="#contact" class="btn">Contact Me</a>
       </div>
     </section>
 
@@ -147,18 +148,26 @@
     <section class="contact" id="contact">
       <h2 class="heading">Contact Me</h2>
 
-      <form action="#">
+      <form action="https://formsubmit.co/d30d3c080f3e819444298731f3410290" method="POST">
         <div class="input-box">
-          <input type="text" placeholder="Full Name">
-          <input type="email" placeholder="Email Address">
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email Address" required >
         </div>
         <div class="input-box">
-          <input type="text" placeholder="Subject">
+          <input type="hidden" name="_subject" value="New message from Website" placeholder="Subject">
         </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <textarea type="text" name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
         <input type="submit" value="Send Message" class="btn">
+        <input type="hidden" name="_next" value="https://www.bbc.co.uk">
       </form>
     </section>
+
+
+    <!-- <form action="https://formsubmit.co/your@email.com" method="POST">
+      <input type="text" name="name" required>
+      <input type="email" name="email" required>
+      <button type="submit">Send</button>
+    </form> -->
 
     <!--Footer-->
 
