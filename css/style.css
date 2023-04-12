@@ -241,11 +241,13 @@ span {
 }
 
 .video-box {
-  position: relative;
-  border-radius: 2rem;
-  box-shadow: 0 0 1rem var(--bg-color);
-  overflow: hidden;
-  display: flex;
+ width: 500px;
+ height: 281px;
+ border-radius: 25%;
+}
+
+iframe {
+border-radius: 10px;
 }
 
 .portfolio-box:hover .portfolio-layer {
@@ -279,7 +281,7 @@ span {
   color: var(--second-bg-color);
 }
 
-.demos {
+body .demos {
   background: var(--main-color);
 }
 
