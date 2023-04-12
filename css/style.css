@@ -218,6 +218,7 @@ span {
 
 .portfolio-box img {
   border-radius: 2rem;
+  height: 28rem;
   width: 100%;
   transition: .5s ease;
 }
