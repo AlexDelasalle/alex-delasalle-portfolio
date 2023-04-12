@@ -271,6 +271,13 @@ span {
   color: var(--second-bg-color);
 }
 
+.demos {
+  background: var(--main-color);
+}
+
+.demos h2 {
+  margin-bottom: 4rem;
+}
 .contact h2 {
   margin-bottom: 3rem;
 }
