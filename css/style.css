@@ -240,10 +240,9 @@ span {
   transition: .5s ease;
 }
 
-.video-box {
+#video-box {
  width: 500px;
  height: 281px;
- border-radius: 25%;
 }
 
 iframe {
@@ -281,7 +280,7 @@ border-radius: 10px;
   color: var(--second-bg-color);
 }
 
-body .demos {
+.demos {
   background: var(--main-color);
 }
 
