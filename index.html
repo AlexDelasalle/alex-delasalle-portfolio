@@ -23,6 +23,7 @@
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">About Me</a>
+        <a href="#blog">Blog</a>
         <a href="#portfolio">Projects</a>
         <a href="#demos">Project Demos</a>
         <a href="#contact">Contact</a>
@@ -86,6 +87,47 @@
       </div>
     </section>
 
+    <!--BLOG-->
+
+    <section class="blog" id="blog">
+      <h2 class="heading">Blog</h2>
+      <div class="blog-container">
+        <div class="card">
+          <h2>W/C 8th May 2023</h2>
+          <div id="week1-preview" class="preview-content">
+            <p>It’s been a challenging week on the coding front. (Let’s face it, there is no easy week in engineering). My brother is taking part in the annual Chase the Sun cycling challenge in June, in which he will set off at sunrise and attempt to get from the east side of England to the west on his bike before the sun sets at the end of the day. And guess who’s been roped into being his support team? That’s right, ol’ muggins over here! </p>
+          </div>
+          <p id="week1-content" class="card-content">It’s been a challenging week on the coding front. (Let’s face it, there is no easy week in engineering). My brother is taking part in the annual Chase the Sun cycling challenge in June, in which he will set off at sunrise and attempt to get from the east side of England to the west on his bike before the sun sets at the end of the day. And guess who’s been roped into being his support team? That’s right, ol’ muggins over here!
+            <br>
+            <br>
+            To make his and quite frankly my life easier on the day. I have been working on building an interface that will do all the calculations to observe if he is making good time, can afford to take an extra break or two and generally make sure he is on track to successfully finish. As a result, I am having my first bash at independently integrating an API into the interface. Taking his distance, time and speed from his Wahoo Fitness account and applying necessary formulas to analyse his progress.
+            <br>
+            <br>
+            This biggest challenge I am facing is that Wahoo fitness only allow their API to interact using Python. A language I have no prior experience using…ah well, what’s life without a challenge!
+            <br>
+            <br>
+            I have included the current progress in my projects below and I have to say I am quite proud of its simplicity and efficiency so far. Least of all the little cycling dude in the right of the screen who moves in real time between sunrise and sunset. Starting on the left at sunrise and eventually finding himself towards the finish line at the end of that day.
+            </p>
+          <a id="week1-show-more" class="show-more" onclick="showContent('week1')">Show more</a>
+          <a id="week1-show-less" class="show-less" onclick="hideContent('week1')">Show less</a>
+        </div>
+
+        <!-- <div class="card">
+          <h2>Week 2</h2>
+          <p id="week2-content" class="card-content">This is the content for Week 2.</p>
+          <a id="week2-show-more" class="show-more" onclick="showContent('week2')">Show more</a>
+          <a id="week2-show-less" class="show-less" onclick="hideContent('week2')">Show less</a>
+        </div>
+
+        <div class="card">
+          <h2>Week 3</h2>
+          <p id="week2-content" class="card-content">This is the content for Week 2.</p>
+          <a id="week2-show-more" class="show-more" onclick="showContent('week2')">Show more</a>
+          <a id="week2-show-less" class="show-less" onclick="hideContent('week2')">Show less</a>
+        </div> -->
+      </div>
+    </section>
+
     <!--Portfolio-->
 
     <section class="portfolio" id="portfolio">
@@ -119,6 +161,14 @@
           </div>
         </div>
 
+        <div class="portfolio-box">
+          <img src="images/cts2.png" alt="">
+          <div class="portfolio-layer">
+            <h4>Chase the Sun Tracker</h4>
+            <p>Still in development, this interace allows me to analyze the progress of my brother as he attempts to cycling the width of the country from sunrise to sunset.</p>
+            <a href="https://chase-the-sun-data.herokuapp.com"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
         <!-- COPY THIS FOR FUTURE PROJECTS-->
 
         <!-- <div class="portfolio-box">

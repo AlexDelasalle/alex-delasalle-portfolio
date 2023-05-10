@@ -51,3 +51,45 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 
 /* Send message redirection */
+
+// Show more/show less function
+function showContent(cardId) {
+  var previewContent = document.getElementById(cardId + '-preview');
+  var fullContent = document.getElementById(cardId + '-content');
+  var showMoreBtn = document.getElementById(cardId + '-show-more');
+  var showLessBtn = document.getElementById(cardId + '-show-less');
+
+  previewContent.style.display = 'none';
+  fullContent.style.display = 'block';
+  showMoreBtn.style.display = 'none';
+  showLessBtn.style.display = 'inline';
+}
+
+function hideContent(cardId) {
+  var previewContent = document.getElementById(cardId + '-preview');
+  var fullContent = document.getElementById(cardId + '-content');
+  var showMoreBtn = document.getElementById(cardId + '-show-more');
+  var showLessBtn = document.getElementById(cardId + '-show-less');
+
+  previewContent.style.display = 'block';
+  fullContent.style.display = 'none';
+  showMoreBtn.style.display = 'inline';
+  showLessBtn.style.display = 'none';
+}
+
+// Show the "Show more" button initially and hide the "Show less" button and full content
+document.querySelectorAll('.card').forEach(function(card) {
+  var preview = card.querySelector('.preview-content');
+  var content = card.querySelector('.card-content');
+  var showMoreBtn = card.querySelector('.show-more');
+  var showLessBtn = card.querySelector('.show-less');
+
+  showMoreBtn.style.display = 'inline';
+  showLessBtn.style.display = 'none';
+  content.style.display = 'none';
+
+  // Check if the preview content exceeds the maximum height
+  if (preview.scrollHeight > preview.clientHeight) {
+    showMoreBtn.style.display = 'inline';
+  }
+});

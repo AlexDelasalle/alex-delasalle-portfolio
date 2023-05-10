@@ -46,7 +46,7 @@ section {
   left: 0;
   width: 100%;
   padding: 2rem 9%;
-  background: var(--bg-color);
+  background: var(--second-bg-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -154,7 +154,7 @@ span {
   align-items: center;
   gap: 2rem;
   border-block-end-color: var(--second-bg-color);
-  margin-bottom: 3rem;
+  background-color: var(--second-bg-color);
 }
 
 .about-img img {
@@ -193,6 +193,61 @@ span {
   background-color: var(--second-bg-color);
 }
 
+.blog {
+  background: var(--bg-color);
+}
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-color: black;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: var(--main-color);
+  color: var(--second-bg-color);
+  height: 100%;
+}
+
+.preview-content {
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.card h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.preview-content p {
+  font-size: 1.5rem;
+}
+
+.card-content {
+  display: none;
+  font-size: 1.5rem;
+}
+
+
+.show-more {
+  display: none;
+  color: var(--second-bg-color);
+  cursor: pointer;
+}
+
+.show-less {
+  display: none;
+  color: var(--second-bg-color);
+  cursor: pointer;
+}
+
 .portfolio {
   background: var(--second-bg-color);
 }
@@ -218,9 +273,9 @@ span {
 
 .portfolio-box img {
   border-radius: 2rem;
-  height: auto;
   width: 100%;
   transition: .5s ease;
+  height: auto;
 }
 
 
