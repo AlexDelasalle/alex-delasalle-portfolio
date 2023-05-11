@@ -9,6 +9,7 @@
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -93,39 +94,29 @@
       <h2 class="heading">Blog</h2>
       <div class="blog-container">
         <div class="card">
-          <h2>W/C 8th May 2023</h2>
-          <div id="week1-preview" class="preview-content">
-            <p>It’s been a challenging week on the coding front. (Let’s face it, there is no easy week in engineering). My brother is taking part in the annual Chase the Sun cycling challenge in June, in which he will set off at sunrise and attempt to get from the east side of England to the west on his bike before the sun sets at the end of the day. And guess who’s been roped into being his support team? That’s right, ol’ muggins over here! </p>
+          <div class="dropdown-to-right">
+            <h2>W/C 8th May 2023</h2>
+            <div class="dropdown">
+              <span class="dropdown-icon material-symbols-outlined">
+                arrow_drop_down_circle
+              </span>
+            </div>
           </div>
-          <p id="week1-content" class="card-content">It’s been a challenging week on the coding front. (Let’s face it, there is no easy week in engineering). My brother is taking part in the annual Chase the Sun cycling challenge in June, in which he will set off at sunrise and attempt to get from the east side of England to the west on his bike before the sun sets at the end of the day. And guess who’s been roped into being his support team? That’s right, ol’ muggins over here!
-            <br>
-            <br>
-            To make his and quite frankly my life easier on the day. I have been working on building an interface that will do all the calculations to observe if he is making good time, can afford to take an extra break or two and generally make sure he is on track to successfully finish. As a result, I am having my first bash at independently integrating an API into the interface. Taking his distance, time and speed from his Wahoo Fitness account and applying necessary formulas to analyse his progress.
-            <br>
-            <br>
-            This biggest challenge I am facing is that Wahoo fitness only allow their API to interact using Python. A language I have no prior experience using…ah well, what’s life without a challenge!
-            <br>
-            <br>
-            I have included the current progress in my projects below and I have to say I am quite proud of its simplicity and efficiency so far. Least of all the little cycling dude in the right of the screen who moves in real time between sunrise and sunset. Starting on the left at sunrise and eventually finding himself towards the finish line at the end of that day.
+          <div class="card-content" style="display: none;">
+            <p class="dropdown-content">
+              It’s been a challenging week on the coding front. (Let’s face it, there is no easy week in engineering). My brother is taking part in the annual Chase the Sun cycling challenge in June, in which he will set off at sunrise and attempt to get from the east side of England to the west on his bike before the sun sets at the end of the day. And guess who’s been roped into being his support team? That’s right, ol’ muggins over here!
+              <br>
+              <br>
+              To make his and quite frankly my life easier on the day. I have been working on building an interface that will do all the calculations to observe if he is making good time, can afford to take an extra break or two and generally make sure he is on track to successfully finish. As a result, I am having my first bash at independently integrating an API into the interface. Taking his distance, time and speed from his Wahoo Fitness account and applying necessary formulas to analyze his progress.
+              <br>
+              <br>
+              This biggest challenge I am facing is that Wahoo fitness only allow their API to interact using Python. A language I have no prior experience using…ah well, what’s life without a challenge!
+              <br>
+              <br>
+              I have included the current progress in my projects below and I have to say I am quite proud of its simplicity and efficiency so far. Least of all the little cycling dude in the right of the screen who moves in real time between sunrise and sunset. Starting on the left at sunrise and eventually finding himself towards the finish line at the end of that day.
             </p>
-          <a id="week1-show-more" class="show-more" onclick="showContent('week1')">Show more</a>
-          <a id="week1-show-less" class="show-less" onclick="hideContent('week1')">Show less</a>
+          </div>
         </div>
-
-        <!-- <div class="card">
-          <h2>Week 2</h2>
-          <p id="week2-content" class="card-content">This is the content for Week 2.</p>
-          <a id="week2-show-more" class="show-more" onclick="showContent('week2')">Show more</a>
-          <a id="week2-show-less" class="show-less" onclick="hideContent('week2')">Show less</a>
-        </div>
-
-        <div class="card">
-          <h2>Week 3</h2>
-          <p id="week2-content" class="card-content">This is the content for Week 2.</p>
-          <a id="week2-show-more" class="show-more" onclick="showContent('week2')">Show more</a>
-          <a id="week2-show-less" class="show-less" onclick="hideContent('week2')">Show less</a>
-        </div> -->
-      </div>
     </section>
 
     <!--Portfolio-->
