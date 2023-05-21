@@ -53,18 +53,21 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 /* Send message redirection */
 
 // Show blog drop down function
-const card = document.querySelector('.card');
-const dropdownIcon = card.querySelector('.dropdown-icon');
-const cardContent = card.querySelector('.card-content');
+const cards = document.querySelectorAll('.card');
 
-dropdownIcon.addEventListener('click', function() {
-  if (cardContent.style.display === 'none') {
-    cardContent.style.display = 'block';
-    card.style.height = card.scrollHeight + 'px';
-    dropdownIcon.textContent = 'remove'; // Change the icon to a dash (or any other desired icon)
-  } else {
-    cardContent.style.display = 'none';
-    card.style.height = 'auto';
-    dropdownIcon.textContent = 'arrow_drop_down_circle'; // Change the icon back to the original icon
-  }
+cards.forEach(card => {
+  const dropdownIcon = card.querySelector('.dropdown-icon');
+  const cardContent = card.querySelector('.card-content');
+
+  dropdownIcon.addEventListener('click', function() {
+    if (cardContent.style.display === 'none') {
+      cardContent.style.display = 'block';
+      card.style.height = card.scrollHeight + 'px';
+      dropdownIcon.textContent = 'remove'; // Change the icon to a dash (or any other desired icon)
+    } else {
+      cardContent.style.display = 'none';
+      card.style.height = 'auto';
+      dropdownIcon.textContent = 'arrow_drop_down_circle'; // Change the icon back to the original icon
+    }
+  });
 });
