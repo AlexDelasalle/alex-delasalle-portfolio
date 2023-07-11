@@ -275,6 +275,8 @@ span {
 .portfolio-box {
   max-width: 100%;
   max-height: 100%;
+  border: black;
+  border-style: solid;
 }
 
 .portfolio-box img {
