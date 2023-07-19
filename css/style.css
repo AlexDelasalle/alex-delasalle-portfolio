@@ -685,10 +685,6 @@ border-radius: 10px;
   width: 30rem;
   height: 42rem;
   position: relative;
-  border-style: solid;
-  border-color: black;
-  background-color: white;
-  border-radius: 1rem;
 }
 
 @media (max-width:500px) {
@@ -775,4 +771,38 @@ border-radius: 10px;
 
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--primary);
+}
+
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.portfolio-card h4 {
+  font-size: 3rem;
+}
+
+.portfolio-card p {
+  font-size: 1.6rem;
+  margin: .3rem 0 1rem;
+  background-color: rgba(0, 0, 0, .7);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.portfolio-card a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background: var(--text-color);
+  border-radius: 50%;
+}
+
+.portfolio-card a i {
+  font-size: 2rem;
+  color: var(--second-bg-color);
 }
