@@ -165,6 +165,7 @@ span {
 .heading {
   text-align: center;
   font-size: 4.5rem;
+  margin-bottom: 1rem;
 }
 
 .header.sticky {
@@ -685,6 +686,16 @@ border-radius: 10px;
   width: 30rem;
   height: 42rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: var(--second-bg-color);
+  border-style: ridge;
+  border-color: var(--main-color);
+  border-radius: 5vh;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width:500px) {
@@ -773,36 +784,27 @@ border-radius: 10px;
   background: var(--primary);
 }
 
-.portfolio-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+.tranding-slide h4 {
+  font-size: 2.5vh;
+  margin-top: 2vh;
 }
 
-.portfolio-card h4 {
-  font-size: 3rem;
-}
-
-.portfolio-card p {
-  font-size: 1.6rem;
-  margin: .3rem 0 1rem;
-  background-color: rgba(0, 0, 0, .7);
-  border-radius: 1rem;
+.tranding-slide p {
+  font-size: 2vh;
   padding: 2rem;
+  word-spacing: .5vh;
 }
 
-.portfolio-card a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 5rem;
-  height: 5rem;
-  background: var(--text-color);
-  border-radius: 50%;
+.tranding-slide a {
+  margin-bottom: 2vh;;
 }
 
-.portfolio-card a i {
-  font-size: 2rem;
-  color: var(--second-bg-color);
+.project-picture-mac {
+  height: auto;
+  width: 50%;
+}
+
+.project-picture-phone {
+  height: auto;
+  width: 25%;
 }

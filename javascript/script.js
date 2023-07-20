@@ -78,8 +78,10 @@ var TrandingSlider = new Swiper('.tranding-slider', {
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
-  loop: true,
+  loop: false,
+  allowTouchMove: true,
   slidesPerView: 'auto',
+  initialSlide: 1,
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
