@@ -19,10 +19,10 @@
 }
 
 /* :root {
-  --bg-color: #3c4048;
-  --second-bg-color: #b2b2b2;
-  --text-color: #EAEAEA;
-  --main-color: #00ABB3;
+  --bg-color: #4E6C50;
+  --second-bg-color: #395144;
+  --text-color: #F0EBCE;
+  --main-color: #AA8B56;
 } */
 
 html {
@@ -791,7 +791,7 @@ border-radius: 10px;
 
 .tranding-slide p {
   font-size: 2vh;
-  padding: 2rem;
+  padding: 1rem;
   word-spacing: .5vh;
 }
 
@@ -812,4 +812,9 @@ border-radius: 10px;
 .project-picture-gameboy {
   height: auto;
   width: 35%;
+}
+
+.portfolio-card-logo {
+  font-size: 2rem;
+  padding-bottom: 1rem;
 }
